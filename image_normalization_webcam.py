@@ -65,7 +65,7 @@ while True:
     # Normalize the tensor three times consecutively
     # Set this to any number. Above 10 not recommended. Your screen is probably not wide enough
     prevs = []
-    for _ in range(15):
+    for _ in range(4):
         normalized_tensor = (normalized_tensor - torch.tensor(mean).view(3, 1, 1)) / torch.tensor(std).view(3, 1, 1)
         prevs.append(normalized_tensor)
     
